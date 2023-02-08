@@ -36,6 +36,9 @@ Howdy angelichorsey
 'Howdy'
 >>> greet('World')
 Howdy World
+>>> greeting = 'Hello'
+>>> greet('angelichorsey')
+Hello angelichorsey
 >>> exit()
 (venv) PS C:\src\angelichorsey\tips-n-tricks\python>
 ```
