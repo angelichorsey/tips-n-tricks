@@ -5,7 +5,7 @@ Modules in python are packaged for distribution and `pip` is what manages them l
 ```pwsh
 # verify module exists
 python -m pip
-# other commands and options
+# other pip commands and options
 python -m pip --help
 # upgrade pip with itself
 python -m pip install -U pip
@@ -22,7 +22,8 @@ In situations where you may be using multiple versions of the same python module
 ```pwsh
 # create the virtual environment
 python -m venv venv
-# the only argument that is passed is the name of the directory it places the environment into. "venv" is the common choice, but it could be anything specified.
+# the only argument that is passed is the name of the directory it places the environment into
+# "venv" is the common choice, but it could be anything specified
 python -m venv env
 python -m venv pyenv
 python -m venv .env

@@ -1,2 +1,2 @@
 # tips-n-tricks
-Notes, shortcuts, and other fun stuff in programming and command line interfaces.
+Personally curated tips and tricks for programming languages and command line interfaces. Created for self reference and to share with others.
