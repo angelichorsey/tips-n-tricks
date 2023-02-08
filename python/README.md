@@ -1,5 +1,45 @@
 # Python
 
+## Running Scripts
+Python files can be run directly under the following conditions:
+- your system has mappings to know what executes `.py` files
+- the script file has its executable bit on
+- other stuff I can't remember at the moment
+```pwsh
+.\some_script.py
+```
+
+However, you can avoid having the environment configured correctly and pass the script as an argument to `python`:
+```pwsh
+python some_script.py
+```
+
+This is also useful when working in virtual environments so you don't accidentally use and modify the system python.
+
+Additionally, you can pass the `-i` option to load the script into the interpreter after running it. This can help in early development and learning as it brings the script into the interpreter's namespace. Review `load_into_interpreter.py` in this directory:
+```python
+greeting = "Howdy"
+
+def greet(name):
+    print(greeting, name)
+
+greet('angelichorsey')
+```
+
+Here is a copy of my terminal showing the script running without `-i`, and then with:
+```pwsh
+(venv) PS C:\src\angelichorsey\tips-n-tricks\python> python .\load_into_interpreter.py
+Howdy angelichorsey
+(venv) PS C:\src\angelichorsey\tips-n-tricks\python> python -i .\load_into_interpreter.py
+Howdy angelichorsey
+>>> greeting
+'Howdy'
+>>> greet('World')
+Howdy World
+>>> exit()
+(venv) PS C:\src\angelichorsey\tips-n-tricks\python>
+```
+
 ## Package (Module) Management
 Modules in python are packaged for distribution and `pip` is what manages them locally. It is both a command and a module. Though calling it as a module is preferred for consistency.
 ```pwsh
