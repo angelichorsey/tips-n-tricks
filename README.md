@@ -1,7 +1,7 @@
 # tips-n-tricks
 Personally curated tips and tricks for programming languages and command line interfaces. Created for self reference and to share with others.
 
-My current focus is providing information the reduces the initial setup and efficiency barriers that people encounter when first learning programming.
+My goal is to providing information that reduces the initial setup and efficiency barriers that people encounter when first learning to program. My friends that I wanted to share this with are windows users and that is how this repo will present.
 
 ## Python Programming
 - [CLASS 0](setup/README.md): Setup Development Environment

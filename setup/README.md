@@ -8,14 +8,14 @@ Software to be installed:
 - [Python 3.10](https://docs.python.org/3.10/tutorial/index.html) - easy to learn, powerful programming language
 
 ### Security Note
-Powershell has a security feature for running scripts. We'll be setting it for the current user to `RemoteSigned`. This means that it will only apply to scripts that execute as part of a download, which provides some security. Mostly it allows local scripts to run without issue, which we need for both the profile and extra scripts Chocolatey runs when installing packages. This does all scripts that are downloaded and then executed as separate processes to occur as well.
+Powershell has a security feature for running scripts. We'll be setting it for the current user to `RemoteSigned`. This provides a little security by only running signed remote scripts that execute as part of a download. Our interest is so local scripts can run without issue, which is need for the powershell profile and various installation scripts chocolatey executes.
 
 ### Packages
 **Package** refers to bundled up collections of software the contain the files, registry edits, user settings, system settings, etc that are needed for the it to properly run on a system. **Package management** is the process of automating the install and configuration of software.
 
-In Windows package management is typically manual. Performed by visiting a website and clicking a download link. The saved file usually ends in `.exe` or `.msi` and runs an installation wizard prompting for input. However, there are many applications that only need the relevant files and can be "installed" by extracting them from an archive (i.e., unzipping). Often times there are still modifications that need to be made to a config file. This is tedious and error prone when trying to share how to setup an environment for developing programs.
+Package management in windows is typically manual. Performed by visiting a website and clicking a download link. The saved file usually ends in `.exe` or `.msi` and runs an installation wizard prompting for input. There are many applications that only need the relevant files and can be "installed" by extracting them from an archive (i.e., unzipping). However, often there are still modifications that need to be made. This is tedious and error prone when trying to share how to setup an environment for developing programs.
 
-This is precisely why Chocolatey is valuable. It removes the need for full how-to steps in installing the software above. I don't need to write them and you don't need to read them, or worry about configuring something incorrectly. Copy and paste the commands that follow and you should be writing python comfortably within the hour.
+This is why Chocolatey is valuable. It removes the need for full how-to steps in installing the software above. I don't need to write them and you don't need to read them, or worry about configuring something incorrectly. Copy and paste the commands that follow and you should be writing python comfortably within the hour.
 
 ## Chocolatey
 1. Open the start menu and search for powershell, then select _Run as Administrator_.  
