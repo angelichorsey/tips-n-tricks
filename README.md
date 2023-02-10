@@ -8,4 +8,4 @@ My current focus is providing information the reduces the initial setup and effi
 - [CLASS 1](python/interpreter.md): Command-Line Interfaces and the Python Interpreter
 - [CLASS 2](python/basics.md): Programming Basics and Python Syntax
 - [CLASS 3](python/pip_venv.md): PIP and Virtual Environments
-- [CLASS 4](python/tutorial/synthesizer/01_play_melody.md): Play a Melody from You're Computer
+- [CLASS 4](python/tutorial/synthesizer/01_play_melody.md): Play a Melody from Your Computer
